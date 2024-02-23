@@ -147,7 +147,7 @@ export default function SignUp() {
               One of Us ?
             </div>
             <div className="text-xl text-slate-800 font-bold">
-              Please Login In if you already have an account.
+              Please Login if you already have an account.
             </div>
             <div className="my-10">
               <a

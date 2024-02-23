@@ -9,7 +9,7 @@ import {
   AiOutlineAlipay,
   AiOutlinePayCircle,
 } from "react-icons/ai";
-import { Formik, Field, Form   } from 'formik';
+import { Formik, Field, Form } from 'formik';
 
 
 const initialValues = {
@@ -18,7 +18,7 @@ const initialValues = {
 
 const Footer = () => {
   // Define form submission function
-  const onSubmit = (values,{resetForm}) => {
+  const onSubmit = (values, { resetForm }) => {
     // Handle form submission logic here
     console.log('Form submitted with values:', values);
     resetForm()
@@ -63,25 +63,25 @@ const Footer = () => {
             Get Notified
           </div>
           <div className="form-group">
-          <Formik
-      initialValues={initialValues}
-      onSubmit={onSubmit}
-    >
-            <Form className="form my-5 flex" method="GET">
-              <Field
-                name="email"
-                className="input rounded-tl-md rounded-bl-md  p-2 w-[70%]"
-                type="text"
-                placeholder="Enter your email"
-              />
-              <button
-                name="submit"
-                type="submit"
-                className="w-[30%] bg-slate-900 text-white hover:bg-slate-700 duration-300 rounded-tr-md rounded-br-md"
-              >
-                Subscribe
-              </button>
-            </Form>
+            <Formik
+              initialValues={initialValues}
+              onSubmit={onSubmit}
+            >
+              <Form className="form my-5 flex" method="GET">
+                <Field
+                  name="email"
+                  className="input rounded-tl-md rounded-bl-md  p-2 w-[70%]"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+                <button
+                  name="submit"
+                  type="submit"
+                  className="w-[30%] bg-slate-900 text-white hover:bg-slate-700 duration-300 rounded-tr-md rounded-br-md"
+                >
+                  Subscribe
+                </button>
+              </Form>
             </Formik>
             <p className="text-white">
               We only send you, promo codes, vouchers, and other offers our top
@@ -89,30 +89,30 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="socail col md:col-span-1 px-4 col-span-3">
+        <div className="social col md:col-span-1 px-4 col-span-3">
           <div className="font-bold text-white md:text-3xl text-2xl md:my-5 my-10">
             Keep in touch
           </div>
           <div className="icons flex justify-around px-5">
             <div className="Facebook">
-              <a href="#" className="text-4xl text-white">
+              <a href="https://www.facebook.com/saad.raj4" className="text-4xl text-white">
                 <AiOutlineFacebook />
               </a>
             </div>
 
             <div className="Whatsapp">
-              <a href="#" className="text-4xl text-white">
+              <a href="https://api.whatsapp.com/send/?phone=%2B923025784042&text&type=phone_number&app_absent=0" className="text-4xl text-white">
                 <AiOutlineWhatsApp />
               </a>
             </div>
 
             <div className="Twitter">
-              <a href="#" className="text-4xl text-white">
+              <a href="https://twitter.com/saad_raj4" className="text-4xl text-white">
                 <AiOutlineTwitter />
               </a>
             </div>
             <div className="Instagram">
-              <a href="#" className="text-4xl text-white">
+              <a href="https://www.instagram.com/saad.raj4" className="text-4xl text-white">
                 <AiOutlineInstagram />
               </a>
             </div>
