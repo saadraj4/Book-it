@@ -3,7 +3,7 @@ import banner from '../assets/img/bus/banner.jpg';
 import img from '../assets/img/bus/2.png';
 export default function BusBanner() {
   return (
-    <div className="w-screen h-screen bg-no-repeat p-0 bg-[image:var(--image-url)]"  style={{'--image-url': `url(${banner})`, 'background-size':'cover'} } >    
+    <div className="w-screen h-screen bg-no-repeat p-0 bg-[image:var(--image-url)]"  style={{'--image-url': `url(${banner})`, 'backgroundSize':'cover'} } >    
     <div className="banner w-full py-24 sm:px-20 px-10 align-middle items-center">
     <div className='sm:pr-10 sm:text-left text-center backdrop-opacity-10 backdrop-invert bg-white/50 rounded-md p-10 '>
       <div className="max-w-screen-lg mx-auto">

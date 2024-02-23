@@ -16,7 +16,7 @@ export default function BlogComponent() {
               className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
               style={{
                 "--image-url": `url(${img1})`,
-                "background-size": "cover",
+                "backgroundSize": "cover",
               }}
             >
               <div className="">
@@ -37,7 +37,7 @@ export default function BlogComponent() {
               className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
               style={{
                 "--image-url": `url(${img2})`,
-                "background-size": "cover",
+                "backgroundSize": "cover",
               }}
             >
               <div className="">
@@ -58,7 +58,7 @@ export default function BlogComponent() {
               className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
               style={{
                 "--image-url": `url(${img3})`,
-                "background-size": "cover",
+                "backgroundSize": "cover",
               }}
             >
 
@@ -89,7 +89,7 @@ export default function BlogComponent() {
             className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
             style={{
               "--image-url": `url(${img1})`,
-              "background-size": "cover",
+              "backgroundSize": "cover",
             }}
           >
             <div className="">
@@ -110,7 +110,7 @@ export default function BlogComponent() {
             className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
             style={{
               "--image-url": `url(${img2})`,
-              "background-size": "cover",
+              "backgroundSize": "cover",
             }}
           >
             <div className="">
@@ -131,7 +131,7 @@ export default function BlogComponent() {
             className="blog my-2 bg-no-repeat md:col-span-1 col-span-3 p-5 bg-[image:var(--image-url)] rounded-md h-80 w-80"
             style={{
               "--image-url": `url(${img3})`,
-              "background-size": "cover",
+              "backgroundSize": "cover",
             }}
           >
 
