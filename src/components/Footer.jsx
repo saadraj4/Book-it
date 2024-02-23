@@ -9,8 +9,22 @@ import {
   AiOutlineAlipay,
   AiOutlinePayCircle,
 } from "react-icons/ai";
+import { Formik, Field, Form   } from 'formik';
 
-export default function Footer() {
+
+const initialValues = {
+  email: '',
+};
+
+const Footer = () => {
+  // Define form submission function
+  const onSubmit = (values,{resetForm}) => {
+    // Handle form submission logic here
+    console.log('Form submitted with values:', values);
+    resetForm()
+  };
+
+
   return (
     <div className="footer w-full bg-[#EE6C4D] h-auto p-20 ">
       <div className="sections grid grid-cols-3">
@@ -49,8 +63,12 @@ export default function Footer() {
             Get Notified
           </div>
           <div className="form-group">
-            <form className="form my-5 flex" method="GET">
-              <input
+          <Formik
+      initialValues={initialValues}
+      onSubmit={onSubmit}
+    >
+            <Form className="form my-5 flex" method="GET">
+              <Field
                 name="email"
                 className="input rounded-tl-md rounded-bl-md  p-2 w-[70%]"
                 type="text"
@@ -63,7 +81,8 @@ export default function Footer() {
               >
                 Subscribe
               </button>
-            </form>
+            </Form>
+            </Formik>
             <p className="text-white">
               We only send you, promo codes, vouchers, and other offers our top
               services of Book Karo We only send you, promo codes, vouchers
@@ -137,3 +156,6 @@ export default function Footer() {
     </div>
   );
 }
+
+
+export default Footer;
