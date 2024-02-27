@@ -13,7 +13,6 @@ export default function Bus() {
     <div>
     <Header/>
     <BusBanner />
-    <BookSystem />
     <BusRoutes />
     <Download />
     <Partners />
