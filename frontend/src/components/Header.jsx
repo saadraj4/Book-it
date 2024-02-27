@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 
@@ -7,7 +8,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="navigation px-20 py-5 flex items-center justify-between bg-slate-800 text-[#E0FBFC]">
-        <h1 className="site-title md:text-5xl text-4xl font-bold "><a href="/">Book Karo</a></h1>
+        <h1 className="site-title md:text-5xl text-4xl font-bold "><Link to="/">Book Karo</Link></h1>
         {toggle ? (
           <h3
             onClick={() => setToggle(!toggle)}
@@ -25,28 +26,28 @@ export default function Header() {
         )}
         <ul className="links z-10 gap-5 hidden sm:flex">
           <li className="nav-link">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="nav-link">
-            <a href="/bus">Bus</a>
+            <Link to="/bus">Bus</Link>
           </li>
           <li className="nav-link">
-            <a href="/tour">Tour</a>
+            <Link to="/tour">Tour</Link>
           </li>
           <li className="nav-link">
-            <a href="/attraction">Attraction</a>
+            <Link to="/attraction">Attraction</Link>
           </li>
           <li className="nav-link">
-            <a href="/event">Event</a>
+            <Link to="/event">Event</Link>
           </li>
           <li className="nav-link">
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className="nav-link">
-            <a href="/register">Register</a>
+            <Link to="/register">Register</Link>
           </li>
           <li className="nav-link">
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
         {/* Responsive menu */}
@@ -55,28 +56,28 @@ export default function Header() {
         ${toggle ? "left-[0]" : "left-[-100%]"}`}
         >
           <li className="px-5 py-3 nav-link">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/bus">Bus</a>
+            <Link to="/bus">Bus</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/tour">Tour</a>
+            <Link to="/tour">Tour</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/attraction">Attraction</a>
+            <Link to="/attraction">Attraction</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/event">Event</a>
+            <Link to="/event">Event</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/register">Register</a>
+            <Link to="/register">Register</Link>
           </li>
           <li className="px-5 py-3 nav-link">
-            <a href="/login">Login</a>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
       </div>
