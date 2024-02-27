@@ -5,7 +5,6 @@ import BusRoutes from '../components/BusRoutes';
 import Download from '../components/Download';
 import Footer from '../components/Footer';
 import Features from '../components/Features';
-import BookSystem from '../components/BookSystem';
 import Partners from '../components/Partners';
 
 export default function Bus() {

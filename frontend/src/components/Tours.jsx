@@ -21,6 +21,7 @@ export default function Tours() {
                 <img
                   className="rounded-tr-md rounded-tl-md w-80 h-72"
                   src={img1}
+                  alt=""
                 />
               </div>
               <div className="link px-5 py-4 w-80">

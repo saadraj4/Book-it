@@ -17,6 +17,7 @@ import EventDetails from "./pages/EventDetails";
 import BlogDetails from "./pages/BlogDetails";
 import TourDetails from "./pages/TourDetails";
 import AttractionDetails from "./pages/AttractionDetails";
+import Pricing from './pages/Pricing';
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
           <Route path="/blog-details" element={<BlogDetails />}/>
           <Route path="/tour-details" element={<TourDetails />}/>
           <Route path="/attraction-details" element={<AttractionDetails />}/>
+          <Route path="/pricing" element={<Pricing />}/>
+
           <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
       </Router>

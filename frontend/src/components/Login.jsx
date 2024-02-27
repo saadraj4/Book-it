@@ -1,7 +1,8 @@
 import React from "react";
 import { AiOutlineMail, AiOutlineLock } from "react-icons/ai";
-import { Formik, Field, Form,ErrorMessage } from 'formik';
+import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { Link } from "react-router-dom";
 
 
 
@@ -20,7 +21,7 @@ const validationSchema = Yup.object({
 
 export default function Login() {
   // Define form submission function
-  const onSubmit = (values,{resetForm}) => {
+  const onSubmit = (values, { resetForm }) => {
     // Handle form submission logic here
     console.log('Form submitted with values:', values);
     resetForm()
@@ -73,40 +74,39 @@ export default function Login() {
                   </div>
                 </div>
                 <div>
-                  <a className="text-white hover:text-[#f88c71]" href="#">
-                    Forgot Password ?
-                  </a>
-                </div>
-                <div>
-                  <button
-                    type="submit"
-                    className="p-2 my-5 px-16 border bg-slate-700 text-white duration-300 hover:bg-white hover:text-slate-700 rounded-md"
-                  >
-                    Login
-                  </button>
-                </div>
-              </Form>
+                  <Link to ='/' className="text-white hover:text-[#f88c71]">
+                  Forgot Password ?
+                </Link>
             </div>
-          </div>
-
-          <div className="engage text-center p-10 w-[50%] bg-white rounded">
-            <div className="text-3xl my-5 text-slate-800 font-bold">
-              New Here ?
-            </div>
-            <div className="text-xl text-slate-800 font-bold">
-              Please register first to make booking.
-            </div>
-            <div className="my-10">
-              <a
-                href="/register"
-                className="p-3 px-14 border hover:bg-slate-700 hover:text-white duration-300 border-slate-700 rounded-full"
+            <div>
+              <button
+                type="submit"
+                className="p-2 my-5 px-16 border bg-slate-700 text-white duration-300 hover:bg-white hover:text-slate-700 rounded-md"
               >
-                Register
-              </a>
+                Login
+              </button>
             </div>
-          </div>
+          </Form>
         </div>
       </div>
-    </Formik>
+
+      <div className="engage text-center p-10 w-[50%] bg-white rounded">
+        <div className="text-3xl my-5 text-slate-800 font-bold">
+          New Here ?
+        </div>
+        <div className="text-xl text-slate-800 font-bold">
+          Please register first to make booking.
+        </div>
+        <div className="my-10">
+          <Link to="/register"
+            className="p-3 px-14 border hover:bg-slate-700 hover:text-white duration-300 border-slate-700 rounded-full"
+          >
+            Register
+          </Link>
+        </div>
+      </div>
+    </div>
+      </div >
+    </Formik >
   );
 }

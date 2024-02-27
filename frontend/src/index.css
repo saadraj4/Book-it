@@ -2,3 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&display=swap');
+body{
+    background-image: url(./assets/img/pricing/bg-top.svg),url(./assets/img/pricing/bg-bottom.svg); 
+    background-position: top right,bottom left;
+    background-repeat: no-repeat;
+    background-color:  hsl(0, 0%, 0%);
+    font-family: 'montserrat';
+    font-weight: 700;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+.Pricing-main{
+    display: flex;
+}
+.princings{
+    width: 300px;
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 2px;
+}
+.white{
+    background-color: white;
+    color: hsl(233, 13%, 49%);
+}
+.purple{
+    background-image: linear-gradient( hsl(0, 56%, 13%) , hsl(237, 63%, 64%));
+    color: white;
+    transform: scale(1.1);
+}
+.white h1{
+    color: hsl(232, 13%, 33%);
+}
+button{
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
+    cursor: pointer;
+}
+hr{
+    margin: 20px 0;
+}
+.white hr{
+    color: hsl(233, 13%, 49%);
+}
+.purple hr{
+    color: white;
+}
+.white button{
+    background-image: linear-gradient( to right, hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    color: white;
+}
+.purple button{
+    color:  hsl(237, 63%, 64%);
+    background-color: white;
+}
+.princings h4,h1{
+    margin: 10px 0;
+}
+.heading{
+    text-align: center;
+    margin: 40px 0;
+}
+.heading p{
+    display: inline-block;
+    color: hsl(233, 13%, 49%);
+    font-size: small;
+}
+
+.heading h2{
+    color:  hsl(236, 21%, 58%) ;
+    font-weight: 700;
+}
+input{
+    display: none;
+}
+
+.white button:hover{
+    color:  hsl(237, 63%, 64%);
+    background-image: none;
+    background-color: white;
+    border: rgb(146, 145, 145) 1.5px solid;
+}
+.purple button:hover{
+    color: white;
+    background-color: transparent;
+    border: 1.5px solid white;
+}
+@media screen and (max-width:600px) {
+    .main-content{
+        display:block;
+        justify-content: unset;
+    }
+    .Pricing-main{
+        display: block;
+        width: 100%;
+    }
+    .princings{
+        width: 100%;
+        padding: 40px;
+        margin: 20px 0;
+    }
+    .purple{
+        transform: scale(1);
+    }
+    .princings h1{
+        font-size: 80px;
+        font-weight: bolder;
+    }
+    .princings h4{
+        font-size: large;
+    }
+    .heading h2{
+        font-weight: 700;
+
+    }
+}

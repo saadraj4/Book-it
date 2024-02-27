@@ -1,7 +1,6 @@
 import React from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import moment from 'moment/moment';
-import { AiOutlineLaptop, AiOutlineBars, AiOutlineAlert, AiOutlineAmazon } from 'react-icons/ai'
+
 
 // Define initial form values
 const initialValues = {
