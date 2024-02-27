@@ -35,16 +35,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          {/*
-            Other Routes
-          */}
           <Route path="/event-details" element={<EventDetails />}/>
           <Route path="/blog-details" element={<BlogDetails />}/>
           <Route path="/tour-details" element={<TourDetails />}/>
           <Route path="/attraction-details" element={<AttractionDetails />}/>
-          {/*
-            Invalid URL Routes
-          */}
           <Route path="*" element={<Navigate to={"/"} />} />
         </Routes>
       </Router>
