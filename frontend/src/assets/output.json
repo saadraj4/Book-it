@@ -1,0 +1,62 @@
+[
+  {
+    "Bus id": "fcb3bdd8-697e-3ee0-9444-e68b506e2a21",
+    "Route": "cumque",
+    "distance": 5,
+    "price": 667
+  },
+  {
+    "Bus id": "612da0b1-1db7-3588-883d-c64c478040b4",
+    "Route": "minima",
+    "distance": 73555261,
+    "price": 41
+  },
+  {
+    "Bus id": "baab32e6-5160-3bad-8822-b174f9586466",
+    "Route": "velit",
+    "distance": 1450201,
+    "price": 46107832
+  },
+  {
+    "Bus id": "20b622e3-7763-38bc-8997-0817d197412b",
+    "Route": "eum",
+    "distance": 58,
+    "price": 3601
+  },
+  {
+    "Bus id": "c8bb7733-7f77-3387-8016-f8ab4705d3f8",
+    "Route": "repellendus",
+    "distance": 4,
+    "price": 258
+  },
+  {
+    "Bus id": "b00c9fe4-c3cb-3dcf-98c6-f490b2509434",
+    "Route": "consequatur",
+    "distance": 869209,
+    "price": 399064792
+  },
+  {
+    "Bus id": "d0e0dd88-d511-3699-81dd-6cfa21e17cab",
+    "Route": "voluptas",
+    "distance": 6,
+    "price": 554907719
+  },
+  {
+    "Bus id": "f727dbb7-13e3-3400-9e9b-043f788f7a3e",
+    "Route": "iure",
+    "distance": 7503,
+    "price": 8090
+  },
+  {
+    "Bus id": "0b911353-48e0-3c32-b156-559f54993ebb",
+    "Route": "omnis",
+    "distance": 5358730,
+    "price": 347745
+  },
+  {
+    "Bus id": "e412f1df-d12e-3311-a954-934de0dc418f",
+    "Route": "placeat",
+    "distance": 6227324,
+    "price": 803
+  }
+]
