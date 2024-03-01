@@ -17,7 +17,7 @@ export default function Banner() {
       </div>
       </div>
     <div className='sm:col-span-1 hidden sm:block'>
-      <img src={img} />
+      <img src={img} alt="image"/>
     </div>
     </div>
     </div>

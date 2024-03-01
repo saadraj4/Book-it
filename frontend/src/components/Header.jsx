@@ -7,7 +7,7 @@ export default function Header() {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="header">
-      <div className="navigation px-20 py-5 flex items-center justify-between bg-slate-800 text-[#E0FBFC]">
+      <div className="navigation px-10 flex items-center justify-between bg-slate-800 text-[#E0FBFC]">
         <h1 className="site-title md:text-5xl text-4xl font-bold "><Link to="/">Book Karo</Link></h1>
         {toggle ? (
           <h3
