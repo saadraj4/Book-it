@@ -1,12 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@500&display=swap');
-body{
+.pricebody{
     background-image: url(./assets/bg-top.svg),url(./assets/bg-bottom.svg); 
     background-position: top right,bottom left;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-color:  hsl(0, 0%, 0%);
     font-family: 'montserrat';
     font-weight: 700;
+    margin-bottom: 23px;
 }
 *{
     padding: 0;
@@ -88,9 +88,9 @@ hr{
     color:  hsl(236, 21%, 58%) ;
     font-weight: 700;
 }
-input{
+/* input{
     display: none;
-}
+} */
 
 .white button:hover{
     color:  hsl(237, 63%, 64%);

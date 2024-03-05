@@ -49,6 +49,10 @@ export default function Header() {
           </li>
 
           <li className="nav-link">
+            <Link to="/reservation">Reservation</Link>
+          </li>
+
+          <li className="nav-link">
             <Link to="/register">Register</Link>
           </li>
           <li className="nav-link">
