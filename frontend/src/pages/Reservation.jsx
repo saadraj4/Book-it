@@ -4,9 +4,10 @@ import { Formik, Form, Field } from 'formik';
 // Dummy data for seat status: 0 for available, 1 for booked
 let seats = Array.from({ length: 40 }, (_, i) => ({ id: i + 1, status: 0 }));
 
-const Reservation = () => {
+const Reservation = (props) => {
   // Initial values for Formik
   const initialValues = {
+    id:props.id,
     selectedSeats: [],
     fullname: "",
     email: "",

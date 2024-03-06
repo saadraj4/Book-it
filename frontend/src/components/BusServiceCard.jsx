@@ -1,11 +1,15 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom'
+import React ,{useState} from 'react';
+import Reservation from '../pages/Reservation';
+import { Link } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom'
+
 
 
 const BusServiceCard = () => {
   // Assuming these details will be passed in via props or fetched from an API in a real application
   const serviceDetails = [
     {
+    id:1,
     serviceName: 'BUSINESS PLUS',
     travelDate: '3/7/2024',
     travelTime: '10:00 AM',
@@ -21,6 +25,7 @@ const BusServiceCard = () => {
     ]
   },
   {
+    id:2,
     serviceName: 'BUSINESS PLUS',
     travelDate: '3/7/2024',
     travelTime: '10:00 AM',
@@ -37,13 +42,8 @@ const BusServiceCard = () => {
   },
   
 ];
-let navigate = useNavigate();
 
-    const navigateToreservation = () => {
-        navigate('/reservation');
-    };
 
-// const serviceDetails = serviceDetail[1] 
 
 return (
   <>
@@ -69,7 +69,7 @@ return (
           <span className="text-gray-600 text-sm ml-1">per passenger</span>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <button onClick={navigateToreservation}className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <button onClick={()=> handleSubmit(service.id)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             Select
           </button>
         </div>
